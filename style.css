@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,900');
+
+body {
+	background: url(img/topography.png);
+}
+
+.container {
+	font-family: 'Playfair Display', serif;
+	max-width: 45vw;
+	margin: 20vh auto;
+	background-color: #062F4F;
+	padding: 40px;
+	font-size: 28px;
+	color: #F8EEE7;
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px 2px #E0E0E0;
+	position: relative;
+	overflow: hidden;
+}
+
+.container::after {
+	content: "”";
+	position: absolute;
+	right: 255px;
+	top: 210px;
+	line-height: 1px;
+	width: 1px;
+	font-size: 25em;
+	color: rgba(238, 238, 238, 0.17);
+}
+
+blockquote {
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.quote-author {
+	font-size: 24px;
+}
+
+.controls {
+	float: right;
+}
+
+.controls button {
+	position: relative;
+	padding: 10px 45px 10px 35px;
+	text-transform: uppercase;
+	background-color: #B82601;
+	color: #F8EEE7;
+	border: none;
+	border-radius: 5px;
+	font-weight: bold;
+	z-index: 100;
+}
+
+.controls button:first-child {
+	margin-right: 15px;
+}
+
+.controls button:hover {
+	background-color: #062F4F;
+	outline: 1px solid #B82601;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quote Machine</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<blockquote>
+			<p class="quote-text">I was not proud of what I had learned but I never doubted that it was worth knowing.</p>
+			<cite class="quote-author">― Hunter S. Thompson</cite>
+		</blockquote>
+		<div class="controls">
+			<button id="new">Another</button>
+			<button>
+				<a id="tweet-container" href="https://twitter.com/intent/tweet">Tweet</a>
+  			</button>
+		</div>
+	</div>
+	<script
+  		src="https://code.jquery.com/jquery-3.2.1.min.js"
+  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  		crossorigin="anonymous"></script>
+  	<script>window.twttr = (function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0],
+		    t = window.twttr || {};
+		  if (d.getElementById(id)) return t;
+		  js = d.createElement(s);
+		  js.id = id;
+		  js.src = "https://platform.twitter.com/widgets.js";
+		  fjs.parentNode.insertBefore(js, fjs);
+
+		  t._e = [];
+		  t.ready = function(f) {
+		    t._e.push(f);
+		  };
+
+		  return t;
+		}(document, "script", "twitter-wjs"));</script>
+  	<script src="app.js"></script>
+</body>
+</html>
+
+
